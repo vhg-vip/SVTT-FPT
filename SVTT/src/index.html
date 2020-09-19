@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="FPT">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="FPT, FIM,FrontEnd, Bootstrap,Angular,Dashboard,Typescript">
+    <base href="/" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo-ft.png">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.11.2-web/css/all.css">
+    <link type="text/css" src="/node_modules/primeicons/primeicons.css" />
+    <link type="text/css" src="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+    <link type="text/css" src="/node_modules/primeng/resources/primeng.min.css" />
+
+    <title>FPT FrontEnd</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        // Shared ID
+        gtag('config', 'UA-118965717-3');
+        // Angular ID
+        gtag('config', 'UA-118965717-4');
+    </script>
+    <style>
+        .lds-ring {
+            display: block;
+            position: fixed;
+            width: 160px;
+            height: 160px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .lds-ring div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            margin: 8px;
+            border: 12px solid rgb(20, 165, 238);
+            border-radius: 50%;
+            animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            border-color: rgb(18, 176, 255) transparent transparent transparent;
+        }
+
+        .lds-ring div:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+
+        .lds-ring div:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+
+        .lds-ring div:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+
+        @keyframes lds-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        
+    </style>
+</head>
+
+<body class="app">
+    <!-- App Loading... -->
+    <div class="lds-ring">
+        <span>&nbsp;</span>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>

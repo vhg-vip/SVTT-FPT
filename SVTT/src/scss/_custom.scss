@@ -1,0 +1,280 @@
+// Here you can add other styles
+// icon
+.fa-folder{
+    color: #ffd43b !important;
+}
+.fa-folder-open{
+    @extend .fa-folder;
+}
+.pi-image{
+    color: #1c7ed6 !important;
+}
+.pi-video{
+    color: #099268 !important;
+}
+
+
+.m-l-btn {
+    margin-left: 5px;
+}
+.m-r{
+    margin-right: 5px;
+}
+.scroll-cell{
+    overflow-y: auto;
+    max-height: 40px;
+}
+// Responsive
+@mixin medium-screen {
+    @media (max-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin small-screen {
+    @media (max-width: 1200px){
+        @content;
+    }
+}
+
+@mixin ipad-screen {
+    @media(max-width: 800px){
+        @content;
+    }
+}
+
+@mixin phone-screen {
+    @media(max-width: 425px){
+        @content;
+    }
+}
+.navbar-brand-full{
+    @include ipad-screen{
+        display: none;
+    }
+}
+.table-display{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    @include ipad-screen{
+        // white-space: nowrap;     
+        overflow-x: auto;
+    }
+}
+p-treeTable{
+    @include  medium-screen {
+        font-size: 10px;
+        width: 100%;
+    }
+    @include small-screen{
+        font-size: 6px;
+        width: 100%;
+    }
+    @include ipad-screen{
+        width: 1000px;
+    }
+}
+.table {
+    @include  medium-screen {
+        font-size: 10px;
+        width: 100%;
+    }
+    @include small-screen{
+        font-size: 6px;
+        width: 100%;
+    }
+    @include ipad-screen{
+        width: 1000px;
+    }
+    font-size: 13px;
+    
+    margin-bottom: 0;
+    margin-top: 15px;
+    th {
+        border: 1px solid white;
+        background-color: #0064b4;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        vertical-align: middle !important;
+    }
+    tr{
+        padding: 0px;
+    }
+    td {
+        border: 1px solid #dee2e6;
+        padding: 7px;
+        background-color: white;
+        text-align: center;
+        word-break: break-word;
+        // div{
+        //     overflow-y: auto;
+        //     max-height: 50px;
+            
+        // }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    .btn-cell{
+        vertical-align: middle;
+    }
+    .search {
+        td{
+            background-color: #ececec;
+        }
+    } 
+    .input-error{
+        border: 1px solid red;
+    }  
+    input {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        padding: 6px;
+        height: 30px;
+    }   
+    .error{
+        color: red;
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+.tree-table {
+    td{
+        text-align: left;
+    }
+    .fas{
+        cursor: pointer;
+    }
+    .child{
+        padding-left: 30px;
+    }
+}
+
+// css for button
+
+.btn-circle {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #2a92d8;
+    @include medium-screen{
+        width: 25px;
+        height: 25px;
+    }
+    @include small-screen{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.btn-search {
+    @extend .btn-circle;
+    background-color: #4caf50;
+    position: relative;
+    .fa-search{
+        position: absolute;
+        left: 9px;
+        bottom: 11px;
+        color: white;
+        @include medium-screen{
+            left: 7px;
+            bottom: 9px;
+        }
+        @include small-screen{
+            left: 6px;
+            bottom: 7px;
+        }
+    }
+}
+
+.btn-reload {
+    @extend .btn-search;
+    .fa-sync-alt{
+        color: white;
+    }
+}
+
+.btn-square {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d4d2d2;
+    background-color: white;
+    text-align: center;
+    @include medium-screen{
+        width: 20px;
+        height: 20px;
+    }
+    @include small-screen{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.btn-delete {
+    @extend .btn-search;
+    background-color: rgb(230, 58, 58);
+    .fa-trash-alt{
+        color: white;
+    }
+}
+
+.btn-edit {
+    @extend .btn-search;
+    background-color: rgb(236, 203, 13);
+    .fa-edit{
+        color: white;
+    }
+}
+
+.btn-unlock{
+    @extend .btn-edit;
+    color: white;
+}
+
+.btn-save {
+    @extend .btn-search;
+    background-color: #4caf50;
+    .fa-save {
+        color: white;
+    }
+}
+
+.btn-cancel {
+    @extend .btn-search;
+    background-color: rgb(230, 58, 58);
+    .fa-times{
+        color: white;
+    }
+}
+
+.btn-addnew {
+    @extend .btn-square;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    .fa-plus{
+        color: #0064b4;
+    }
+}
+
+//prime tree
+body .ui-treetable .ui-editable-column input:focus{
+    outline: 0 !important;
+}
+
+// loading
+.loading-hide #display-loading {
+    display: none;
+}
+
+
+
+
+

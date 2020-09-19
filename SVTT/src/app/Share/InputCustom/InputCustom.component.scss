@@ -1,0 +1,22 @@
+input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 6px;
+    height: 30px;
+}   
+textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 6px;
+    height: 30px;
+}
+.input-error{
+    border: 1px solid red;
+}  
+.error{
+    color: red;
+    padding: 3px;
+    margin: 0;
+}

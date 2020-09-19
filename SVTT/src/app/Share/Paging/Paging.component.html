@@ -1,0 +1,15 @@
+<div class="paging">
+    <button class="first" (click)="FirstPage()" (click)="navigate()"><i class="fas fa-angle-double-left"></i></button>
+    <button class="Previous" (click)="PreviousPage()" (click)="navigate()"><i class="fas fa-angle-left"></i></button>
+    <div *ngFor="let page of Page.Pages, let i=index">
+        <button *ngIf="page.show" (click)="pagingActive(i)" [ngClass]="{'paging-active': page.isActived}"
+            (click)="navigate()">{{page.id}}</button>
+    </div>
+    <button class="Next" (click)="NextPage()" (click)="navigate()"><i class="fas fa-angle-right"></i></button>
+    <button class="last" (click)=" LastPage()" (click)="navigate()"><i class="fas fa-angle-double-right"></i></button>
+
+    <select class="select" (change)="ChangePage($event)" (click)="navigate()">
+        <option hidden>{{Page.Take}}</option>
+        <option *ngFor="let opt of options">{{opt}}</option>
+    </select>
+</div>

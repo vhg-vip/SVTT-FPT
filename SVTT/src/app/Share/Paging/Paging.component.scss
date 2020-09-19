@@ -1,0 +1,50 @@
+.paging{
+    display: flex;
+    button{
+        background-color: white;
+        border: 1px solid #0064b4;
+        margin-right: 0px;
+        border-collapse: collapse;
+        height: 30px;
+        width: 34px;
+        color: #0064b4;
+        font-size: 13px;
+    }
+    .Previous{
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .Next{
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .first{
+        width: auto;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .last{
+        width: auto;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .paging-active {
+        color: white;
+        background-color: #0064b4;
+    }
+    .select{
+        margin-left: 5px;
+        color: #0064b4;
+        background-color: white;
+        border: 1px solid #0064b4;
+        border-radius: 3px;
+        font-size: 13px;
+    }
+}
+

@@ -1,0 +1,106 @@
+{
+    "data": [
+        {
+            "label": "Documents",
+            "data": "Documents Folder",
+            "expandedIcon": "fas fa-folder-open",
+            "collapsedIcon": "fas fa-folder",
+            "children": [
+                {
+                    "label": "Work",
+                    "data": "Work Folder",
+                    "expandedIcon": "fas fa-folder-open",
+                    "collapsedIcon": "fas fa-folder",
+                    "children": [
+                        {
+                            "label": "Expenses.doc",
+                            "icon": "fas fa-folder",
+                            "data": "Expenses Document"
+                        },
+                        {
+                            "label": "Resume.doc",
+                            "icon": "fas fa-folder",
+                            "data": "Resume Document"
+                        }
+                    ]
+                },
+                {
+                    "label": "Home",
+                    "data": "Home Folder",
+                    "expandedIcon": "fas fa-folder-open",
+                    "collapsedIcon": "fas fa-folder",
+                    "children": [
+                        {
+                            "label": "Invoices.txt",
+                            "icon": "fas fa-folder",
+                            "data": "Invoices for this month"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Pictures",
+            "data": "Pictures Folder",
+            "expandedIcon": "fas fa-folder-open",
+            "collapsedIcon": "fas fa-folder",
+            "children": [
+                {
+                    "label": "barcelona.jpg",
+                    "icon": "pi pi-image",
+                    "data": "Barcelona Photo"
+                },
+                {
+                    "label": "logo.jpg",
+                    "icon": "fas fa-folder",
+                    "data": "PrimeFaces Logo"
+                },
+                {
+                    "label": "primeui.png",
+                    "icon": "pi pi-image",
+                    "data": "PrimeUI Logo"
+                }
+            ]
+        },
+        {
+            "label": "Movies",
+            "data": "Movies Folder",
+            "expandedIcon": "fas fa-folder-open",
+            "collapsedIcon": "fas fa-folder",
+            "children": [
+                {
+                    "label": "Al Pacino",
+                    "data": "Pacino Movies",
+                    "children": [
+                        {
+                            "label": "Scarface",
+                            "icon": "pi pi-video",
+                            "data": "Scarface Movie"
+                        },
+                        {
+                            "label": "Serpico",
+                            "icon": "fas fa-folder-video",
+                            "data": "Serpico Movie"
+                        }
+                    ]
+                },
+                {
+                    "label": "Robert De Niro",
+                    "data": "De Niro Movies",
+                    "children": [
+                        {
+                            "label": "Goodfellas",
+                            "icon": "pi pi-video",
+                            "data": "Goodfellas Movie"
+                        },
+                        {
+                            "label": "Untouchables",
+                            "icon": "pi pi-video",
+                            "data": "Untouchables Movie"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+<div class="login-container">
+    <div class="login-box">
+        <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="login-title-box">
+                <span class="login-text">Login</span><br>
+                <span class="signin-text">Sign in to your account</span>
+            </div>
+
+            <div class="login-input">
+                <div class="username-box">
+                    <div class="user-icon">
+                        <i class="fas fa-user "></i>
+                    </div>
+                    <input class="username" type="text" formControlName="username" placeholder="Username">
+                </div>
+                <div class="password-box">
+                    <div class="pass-icon">
+                        <i class="fas fa-lock "></i>
+                    </div>
+                    <input class="password" type="password" formControlName="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="error">{{errorLogin}}</div>
+            <div class="login-btn-box">
+                <button class="login-btn">Login</button>
+            </div>
+            
+        </form>
+</div>

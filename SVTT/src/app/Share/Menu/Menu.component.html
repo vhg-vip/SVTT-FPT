@@ -1,0 +1,38 @@
+<div class="menu" *ngIf="showMenu==true">
+    <div class="nav">
+        <ul>
+            <li class="nav-item" *ngFor="let item of NavItems" [ngClass]="{'active' : item.divider == true}">
+                <div class="item" (click)="viewChildren(item)">
+                    <p class="icon" [ngClass]="item.icon"></p>
+                    <p class="title">{{item.name}}</p>
+                    <i class="dropdown-icon fas fa-chevron-left" *ngIf="item.children != undefined"></i>
+                </div>
+                <ul *ngIf="item.divider == true">
+                    <li class="nav-child" *ngFor="let child of item.children">
+                        <p class="icon" [ngClass]="child.icon"></p>
+                        <p class="title">{{child.name}}</p>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="shortmenu" *ngIf="showMenu == false">
+    <div class="nav">
+        <ul>
+            <li class="nav-item" *ngFor="let item of NavItems" [ngClass]="{'active' : item.divider == true}">
+                <p class="icon" [ngClass]="item.icon"></p>
+                <div class="Title">{{item.name}}
+                    <ul class="children" *ngIf="item.children != undefined" >
+                        <li class="nav-child" *ngFor="let child of item.children" style="width: 106%;">
+                            <p class="icon" [ngClass]="child.icon"></p>
+                            <p class="title">{{child.name}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

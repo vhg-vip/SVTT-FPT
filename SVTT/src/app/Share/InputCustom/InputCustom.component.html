@@ -1,0 +1,11 @@
+<input *ngIf="Type == 'Text'" type="text" value="" 
+        [(ngModel)]="value" (change)="handleOnProvinceChange(value)"
+        [ngClass]="{'input-error': ErrorEntity != null}" >
+<input *ngIf="Type == 'Number'" type="number" value="" 
+        [(ngModel)]="value" (change)="handleOnProvinceChange(value)"
+        [ngClass]="{'input-error': ErrorEntity != null}">
+<textarea *ngIf="Type == 'Textarea'" text="text"  
+        [(ngModel)]="value" (change)="handleOnProvinceChange(value)"
+        [ngClass]="{'input-error': ErrorEntity != null}"></textarea>
+
+<p class="error">{{ErrorEntity}}</p>

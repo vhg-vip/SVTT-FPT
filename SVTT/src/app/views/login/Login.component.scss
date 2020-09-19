@@ -1,0 +1,95 @@
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-box{
+        width: 27rem;
+        height: 17rem;
+        border: 1px solid #e4e5e6;
+        background-color: white;
+        border-radius: 6px;
+        // display: grid;
+        // grid-template-columns: 2fr 1fr;
+        // grid-template-rows: 1fr;
+
+        .login-form{
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1.5fr 0.75fr;
+            padding: 2rem;
+
+            .login-title-box{
+                
+                .login-text{
+                    font-size: 38px;
+                    font-weight: 600;
+                    color: #20a8d8;
+                }
+                .signin-text{
+                    color: #73818f;
+                    cursor: pointer;
+                    &:hover{
+                        color: #20a8d8;
+                    }
+                }
+            }
+
+            .login-input{
+                .username-box{
+                    display: flex;
+                    margin-top: 12px;
+                    height: 2rem;
+                    .user-icon{
+                        border: 1px solid #e4e5e6;
+                        border-collapse: collapse;
+                        width: 2rem;
+                        border-right: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #73818f;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                    }
+                    .username{
+                        width: 90%;
+                        border-collapse: collapse;
+                        border: 1px solid #e4e5e6;
+                        padding-left: 5px;
+                        font-size: 12px;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+
+                .password-box{
+                    @extend .username-box;
+                    .pass-icon{
+                        @extend .user-icon;
+                    }
+                    .password{
+                        @extend .username;
+                    }
+                }
+            }
+            .error{
+                color: red;
+            }
+            .login-btn-box{
+                .login-btn{
+                    background-color: #20a8d8;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    width: 3.5rem;
+                    height: 1.9rem;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
